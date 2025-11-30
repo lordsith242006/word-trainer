@@ -1,16 +1,37 @@
-# React + Vite
+# Тренажёр слов
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Небольшое React‑приложение на Vite для тренировки слов: показывается случайное английское слово и по кнопке можно открыть его русский перевод.
 
-Currently, two official plugins are available:
+## Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React (функциональный компонент и хук `useState`)
+- Vite для сборки и локального запуска
+- JavaScript (без TypeScript)
 
-## React Compiler
+## Как запустить локально
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Установить Node.js (если ещё не установлен).
+2. Клонировать репозиторий или скачать архив с кодом.
+3. В корне проекта выполнить команды:
 
-## Expanding the ESLint configuration
+npm install
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Открыть в браузере адрес, который покажет Vite (обычно `http://localhost:5173/`).
+
+## Основной функционал
+
+- Выбор случайного слова из массива слов.
+- Кнопка **«Новое слово»** показывает другое случайное слово.
+- Кнопка **«Показать перевод»** включает отображение перевода текущего слова.
+- Простой интерфейс без лишних элементов, подходящий для учебного задания.
+
+## Скриншоты
+
+Главный экран с показанным переводом:
+
+![Тренажёр слов — перевод](screenshots/screenshot-1.jpg)
+
+Пример другого слова:
+
+![Тренажёр слов — другое слово](screenshots/screenshot-2.jpg)
